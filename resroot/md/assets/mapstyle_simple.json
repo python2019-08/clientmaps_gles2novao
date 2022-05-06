@@ -1,0 +1,161 @@
+ {
+    "version": 8,
+    "name": "Bright",
+	"sources": {
+        "mapbox": {
+            "url": "mapbox://mapbox.mapbox-streets-v7",
+            "type": "vector"
+        },		
+		"satellite": {
+		  "type": "raster",
+		  "url": "mapbox://mapbox.satellite",
+		  "tileSize": 256
+		}
+    },
+    "center": [ -118.2518, 34.0442 ],
+    "zoom": 15,
+    "sprite": "mapbox://sprites/mapbox/bright-v9",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+	"layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+			    "background-color-desc":"sea blue",  
+                "background-color": "167,217,252"
+            } 
+        }, 
+	{
+		"id": "satellite",
+		"type": "raster",
+		"source": "satellite",
+		"source-layer": "mapbox_satellite_full",
+		"paint": {
+		  "raster-fade-duration": 100,		
+		  "raster-opacity": {
+			"base": 1,
+			"stops": [[11, 1], [12, 0.5]]
+		  }
+	    }
+	}, 
+		
+		{
+			"id": "water",
+			"type": "face",
+			"is-visible": true,
+			"minzoom":3,
+			"maxzoom":19,
+			"source": "composite",
+			"source-layer": "water",
+			"paint": {				
+				"fill-color": {
+					"base": 1,
+					"stops": [
+						[15, "200 , 23 , 82"],
+						[16, "230 , 37 , 84"]
+					]
+				},
+				"fill-opacity": {
+					"base": 1,
+					"stops": [
+						[11, 0],
+						[11.5, 1]
+					]
+				},
+				
+				
+				"fill-outline-color": "35,6,79",
+				
+				
+				"shadow-color": "230 , 23 , 82 ",
+				"shadow-opacity": 1,
+				"shadow-offset": {
+					"base": 1.2,
+					"stops": [
+						[7, [0, 0]],
+						[16, [-1, -1]]
+					]
+				},
+				"shadow-offset-anchor": "viewport" 
+				
+			} 
+		},  		
+		{
+            "id": "building",
+            "type": "building",
+            "source": "mapbox",
+            "source-layer": "building",
+            "paint": {
+			    "side-pattern":"building-side.png", 
+                "side-color": {
+                    "base": 1,
+                    "stops": [
+                        [ 15.5, "#f2eae2" ],
+                        [ 16, "#dfdbd7" ]
+                    ]
+                },
+				"side-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [ 15, 0 ],
+                        [ 16, 1 ]
+                    ]
+                },
+				
+				
+				"top-color": "#f2eae2",
+                "top-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [ 15, 0 ],
+                        [ 16, 1 ]
+                    ]
+                },
+				"top-outline-color": "#dfdbd7"
+            } 
+        }, 	
+		 	
+		{             
+            "id": "tunnel_motorway_link",
+			"visibility": "visible",   
+            "type": "line",
+            "source": "mapbox",  
+			"source-layer": "road",	
+            "filter": [
+                "all",
+                [ "==", "structure", "tunnel" ],
+                [ "==", "class", "motorway_link" ]
+            ],
+            "paint": {
+                "line-casing-color": "#e9ac77",
+				"line-casing-opacity": 1,
+                "line-casing-dasharray": [
+                    0.5,
+                    0.25
+                ],
+                "line-casing-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [ 12, 1 ],
+                        [ 13, 3 ],
+                        [ 14, 4 ],
+                        [ 20, 15 ]
+                    ]
+                } ,
+				
+				
+                "line-color": "#fc8",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [ 12.5, 0 ],
+                        [ 13, 1.5 ],
+                        [ 14, 2.5 ],
+                        [ 20, 11.5]
+                    ]
+                }				
+            } 
+            
+        }	 		
+	]
+}

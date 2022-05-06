@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\md\drawengine\drawcontext.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\drawengine.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpainters.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_background.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_building.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_debug.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_face.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_line.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshaderbase.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshaders.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_alpha_tex_uc.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_bg_pattern.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_line.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_tex_uc.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_thinline.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_uc.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\rscmgr\dash_array.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\rscmgr\gltexmgr.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\rscmgr\stbImage.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\tilecover_rasterize.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\transform.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\view_camera.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\viewcam_Constraint.cpp" />
+    <ClCompile Include="..\..\src\md\drawengine\transform_state.cpp" />
+    <ClCompile Include="..\..\src\md\gps_scene\gps_view.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\mapengine.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\marker\marker.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_bg.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_building.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_debug.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_face.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_line.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_overlay.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\mapengine_msghandler.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_background.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_building.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_face.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_line.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_raster.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_symbol.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\style4map.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\style\style_value.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\tile\raster_tile_source.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\tile\response.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\tile\tile_db_worker.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile_layout.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile_mvt.cpp" />
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile_source.cpp" />
+    <ClCompile Include="..\..\src\md\md_global.cpp" />
+    <ClCompile Include="..\..\src\md\md_map.cpp" />
+    <ClCompile Include="..\..\src\md\util\color.cpp" />
+    <ClCompile Include="..\..\src\md\util\file_io.cpp" />
+    <ClCompile Include="..\..\src\md\util\geo.cpp" />
+    <ClCompile Include="..\..\src\md\util\geom.cpp" />
+    <ClCompile Include="..\..\src\md\util\interpolate.cpp" />
+    <ClCompile Include="..\..\src\md\util\logtool.cpp" />
+    <ClCompile Include="..\..\src\md\util\math_tools.cpp" />
+    <ClCompile Include="..\..\src\md\util\merc_prj.cpp" />
+    <ClCompile Include="..\..\src\md\util\rapidjson.cpp" />
+    <ClCompile Include="..\..\src\md\util\stops_def.cpp" />
+    <ClCompile Include="..\..\src\md\util\tc_bound_frustum.cpp" />
+    <ClCompile Include="..\..\src\md\util\tile_cover_bound.cpp" />
+    <ClCompile Include="..\..\src\md\util\tile_id.cpp" />
+    <ClCompile Include="..\..\src\platformbase\android\gl_interface_android.cpp" />
+    <ClCompile Include="..\..\src\platformbase\common\gl_interface.cpp" />
+    <ClCompile Include="..\..\src\platformbase\ios\gl_interface_ios.cpp" />
+    <ClCompile Include="..\..\src\platformbase\linux\gl_interface_linux.cpp" />
+    <ClCompile Include="..\..\src\platformbase\qt\gl_interface_qt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\md\drawengine\camera_options.hpp" />
+    <ClInclude Include="..\..\inc\md\drawengine\drawdevice.h" />
+    <ClInclude Include="..\..\inc\md\md_map.h" />
+    <ClInclude Include="..\..\inc\md\util\chrono.hpp" />
+    <ClInclude Include="..\..\inc\md\util\color.hpp" />
+    <ClInclude Include="..\..\inc\md\util\constants.hpp" />
+    <ClInclude Include="..\..\inc\md\util\geo.hpp" />
+    <ClInclude Include="..\..\inc\md\util\geom.hpp" />
+    <ClInclude Include="..\..\inc\md\util\geom_inl.hpp" />
+    <ClInclude Include="..\..\inc\md\util\math_tools.hpp" />
+    <ClInclude Include="..\..\inc\platformbase\gl_interface.h" />
+    <ClInclude Include="..\..\src\md\drawengine\drawcontext.h" />
+    <ClInclude Include="..\..\src\md\drawengine\drawengine.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpainters.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpainters_obj_def.hpp" />
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_background.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_building.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_debug.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_face.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_line.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshaderbase.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshaders.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_alpha_tex_uc.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_bg_pattern.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_line.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_tex_uc.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_thinline.h" />
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_uc.h" />
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\dash_array.h" />
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\gltexmgr.h" />
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\stb_easy_font.h" />
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\stb_image.h" />
+    <ClInclude Include="..\..\src\md\drawengine\tilecover_rasterize.h" />
+    <ClInclude Include="..\..\src\md\drawengine\transform.hpp" />
+    <ClInclude Include="..\..\src\md\drawengine\view_camera.h" />
+    <ClInclude Include="..\..\src\md\drawengine\viewcam_Constraint.h" />
+    <ClInclude Include="..\..\src\md\drawengine\transform_state.hpp" />
+    <ClInclude Include="..\..\src\md\gps_scene\gps_view.h" />
+    <ClInclude Include="..\..\src\md\mapengine\mapengine.h" />
+    <ClInclude Include="..\..\src\md\mapengine\marker\marker.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_bg.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_building.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_debug.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_obj_def.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_face.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_line.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_overlay.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_background.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_building.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_face.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_line.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\style4map.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_raster.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_symbol.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\styletypes.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\style\style_value.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\tile\raster_tile_source.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\tile\response.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\tile\tile_db_worker.h" />
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile_layout.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile_mvt.hpp" />
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile_source.hpp" />
+    <ClInclude Include="..\..\src\md\md_global.h" />
+    <ClInclude Include="..\..\src\md\util\cpp_misc.hpp" />
+    <ClInclude Include="..\..\src\md\util\file_io.hpp" />
+    <ClInclude Include="..\..\src\md\util\interpolate.hpp" />
+    <ClInclude Include="..\..\src\md\util\logtool.hpp" />
+    <ClInclude Include="..\..\src\md\util\lru_cache.h" />
+    <ClInclude Include="..\..\src\md\util\merc_prj.hpp" />
+    <ClInclude Include="..\..\src\md\util\msg_que_worker.h" />
+    <ClInclude Include="..\..\src\md\util\rapidjson.hpp" />
+    <ClInclude Include="..\..\src\md\util\stops_def.hpp" />
+    <ClInclude Include="..\..\src\md\util\string.hpp" />
+    <ClInclude Include="..\..\src\md\util\tc_bound_frustum.hpp" />
+    <ClInclude Include="..\..\src\md\util\tile_cover_bound.hpp" />
+    <ClInclude Include="..\..\src\md\util\tile_id.hpp" />
+    <ClInclude Include="..\..\src\md\util\unitbezier.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A7F02FA8-CC25-4BBA-92B7-1CE8F05DEA87}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mbgl160</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\build\vc\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\build\vc\$(PlatformName)\$(Configuration)\tmp\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\build\vc\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\build\vc\$(PlatformName)\$(Configuration)\tmp\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\build\vc\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\build\vc\$(PlatformName)\$(Configuration)\tmp\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\build\vc\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\build\vc\$(PlatformName)\$(Configuration)\tmp\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OsID_WINDOWS;SWDevFW_QT;CHANGE_MBTILE_2_OURTILE;USE_ViewCamera_AS_TransformState;SK_BUILD_FOR_WIN32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../inc;../../src;../../vendor\inc;../../vendor\mb-base\rapidjson\include;../../vendor\mb-base\inc;../../vendor\mb-base\geometry.hpp\include;../../vendor\mb-base\variant\include;../../vendor\mb-base\vector-tile\include;../../vendor\wagyu\include;../../vendor\mb-base\geojson.hpp\include;../../vendor/harfbuzz-icu-freetype/freetype/include;../../vendor</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OsID_WINDOWS;SWDevFW_QT;CHANGE_MBTILE_2_OURTILE;USE_ViewCamera_AS_TransformState;SK_BUILD_FOR_WIN32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../inc;../../src;../../vendor\inc;../../vendor\mb-base\rapidjson\include;../../vendor\mb-base\inc;../../vendor\mb-base\geometry.hpp\include;../../vendor\mb-base\variant\include;../../vendor\mb-base\vector-tile\include;../../vendor\wagyu\include;../../vendor\mb-base\geojson.hpp\include;../../vendor/harfbuzz-icu-freetype/freetype/include;../../vendor</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OsID_WINDOWS;SWDevFW_QT;CHANGE_MBTILE_2_OURTILE;USE_ViewCamera_AS_TransformState;SK_BUILD_FOR_WIN32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../inc;../../src;../../vendor\inc;../../vendor\mb-base\rapidjson\include;../../vendor\mb-base\inc;../../vendor\mb-base\geometry.hpp\include;../../vendor\mb-base\variant\include;../../vendor\mb-base\vector-tile\include;../../vendor\wagyu\include;../../vendor\mb-base\geojson.hpp\include;../../vendor/harfbuzz-icu-freetype/freetype/include;../../vendor</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OsID_WINDOWS;SWDevFW_QT;CHANGE_MBTILE_2_OURTILE;USE_ViewCamera_AS_TransformState;SK_BUILD_FOR_WIN32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../inc;../../src;../../vendor\inc;../../vendor\mb-base\rapidjson\include;../../vendor\mb-base\inc;../../vendor\mb-base\geometry.hpp\include;../../vendor\mb-base\variant\include;../../vendor\mb-base\vector-tile\include;../../vendor\wagyu\include;../../vendor\mb-base\geojson.hpp\include;../../vendor/harfbuzz-icu-freetype/freetype/include;../../vendor</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

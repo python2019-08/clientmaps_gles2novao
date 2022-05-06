@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\md">
+      <UniqueIdentifier>{7166c211-6221-4fbb-bd49-2244a11af754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\util">
+      <UniqueIdentifier>{bc6fae88-612b-4d80-9659-b4e60ca3f1cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="src\platformbase">
+      <UniqueIdentifier>{75bd3b5e-6cbd-4623-b4f8-ecbe3fc48138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platformbase\common">
+      <UniqueIdentifier>{2b2943a6-e232-408c-bf58-48cf9da866a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\md">
+      <UniqueIdentifier>{93004fe3-c647-4447-b208-c61973e4a3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\md\util">
+      <UniqueIdentifier>{88fd28d9-5a8b-4042-8905-d3598cae0b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\platformbase">
+      <UniqueIdentifier>{293dd9d2-d713-47d5-b8c6-d829d5244774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platformbase\qt">
+      <UniqueIdentifier>{23f61782-825d-43c0-ba55-ec313936ae35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platformbase\ios">
+      <UniqueIdentifier>{6bb788a4-6062-4cf3-aa58-fc7266dbf069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platformbase\android">
+      <UniqueIdentifier>{079943cd-9328-45a7-81c1-6515252ab4c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platformbase\linux">
+      <UniqueIdentifier>{6e0f5a3e-e9fc-4372-9c49-94614798261d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\md\drawengine">
+      <UniqueIdentifier>{e64da7e9-5596-4868-8d6d-3ddbf520e7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\drawengine">
+      <UniqueIdentifier>{7f4e457a-4b5c-47c5-9b3b-f4759c51807a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\drawengine\glshaders">
+      <UniqueIdentifier>{0d929da0-d5c1-4cd6-b289-1e113045beff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\md\mapengine">
+      <UniqueIdentifier>{38fe3157-7f1b-4854-b1a4-653670d0dfe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\mapengine">
+      <UniqueIdentifier>{b806478f-6312-4a0e-8412-04d8b2be27f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\mapengine\style">
+      <UniqueIdentifier>{26680f51-ae40-470a-9bed-1498b887fe31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\drawengine\painters">
+      <UniqueIdentifier>{93509c50-323f-46a8-9d0a-8963139559b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\mapengine\marker">
+      <UniqueIdentifier>{afcb4f82-17ad-40cc-bb92-f13ff15d9d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\md\mapengine\data">
+      <UniqueIdentifier>{e866f6c7-c1c9-459a-ae01-1e1baa58229b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\mapengine\data">
+      <UniqueIdentifier>{3cd42d5d-35ea-4c89-996e-388392b6e791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\mapengine\scenelayer">
+      <UniqueIdentifier>{82c74085-f667-4236-880e-952720e9a3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\mapengine\tile">
+      <UniqueIdentifier>{2672d8a1-c7b7-4412-a8ca-0d6a178e82b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\gps_scene">
+      <UniqueIdentifier>{f7038ca4-dda9-4ad8-b82e-a52c2470ad62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\md\drawengine\rscmgr">
+      <UniqueIdentifier>{96c4ad74-9fc7-4909-8d8e-de76a805a326}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\md\util\rapidjson.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\geo.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\interpolate.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platformbase\qt\gl_interface_qt.cpp">
+      <Filter>src\platformbase\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platformbase\android\gl_interface_android.cpp">
+      <Filter>src\platformbase\android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platformbase\linux\gl_interface_linux.cpp">
+      <Filter>src\platformbase\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platformbase\ios\gl_interface_ios.cpp">
+      <Filter>src\platformbase\ios</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platformbase\common\gl_interface.cpp">
+      <Filter>src\platformbase\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\drawengine.cpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshaderbase.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_bg_pattern.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_line.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\mapengine.cpp">
+      <Filter>src\md\mapengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\md_map.cpp">
+      <Filter>src\md</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\transform.cpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\transform_state.cpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_line.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_symbol.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\style4map.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\style_value.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\tc_bound_frustum.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\tile_cover_bound.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshaders.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_tex_uc.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_uc.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\geom.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_background.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\marker\marker.cpp">
+      <Filter>src\md\mapengine\marker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpainters.cpp">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_background.cpp">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\rscmgr\gltexmgr.cpp">
+      <Filter>src\md\drawengine\rscmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\rscmgr\stbImage.cpp">
+      <Filter>src\md\drawengine\rscmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\drawcontext.cpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_face.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\color.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_building.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\file_io.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\tile_id.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\style\stylelayer_raster.cpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer.cpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_bg.cpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\tile\raster_tile_source.cpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile_source.cpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\tile\tile_db_worker.cpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\tile\response.cpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile_layout.cpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile.cpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_overlay.cpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\mapengine_msghandler.cpp">
+      <Filter>src\md\mapengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_face.cpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_line.cpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_debug.cpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_debug.cpp">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_face.cpp">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_line.cpp">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\md_global.cpp">
+      <Filter>src\md</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_alpha_tex_uc.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\stops_def.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\rscmgr\dash_array.cpp">
+      <Filter>src\md\drawengine\rscmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\logtool.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\gps_scene\gps_view.cpp">
+      <Filter>src\md\gps_scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\tilecover_rasterize.cpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\merc_prj.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\view_camera.cpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\viewcam_Constraint.cpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\util\math_tools.cpp">
+      <Filter>src\md\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\tile\vec_tile_mvt.cpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glshaders\glshd_thinline.cpp">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\mapengine\scenelayer\scenelayer_building.cpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\md\drawengine\glpainters\glpaint_building.cpp">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\md\util\rapidjson.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\util\math_tools.hpp">
+      <Filter>inc\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\util\chrono.hpp">
+      <Filter>inc\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\util\constants.hpp">
+      <Filter>inc\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\platformbase\gl_interface.h">
+      <Filter>inc\platformbase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshaderbase.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_bg_pattern.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_line.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\mapengine.h">
+      <Filter>src\md\mapengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\md_map.h">
+      <Filter>inc\md</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\drawengine\drawdevice.h">
+      <Filter>inc\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\drawengine.h">
+      <Filter>src\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\transform.hpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\transform_state.hpp">
+      <Filter>src\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\drawengine\camera_options.hpp">
+      <Filter>inc\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\style4map.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\util\geo.hpp">
+      <Filter>inc\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\util\color.hpp">
+      <Filter>inc\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\style_value.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\tc_bound_frustum.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\tile_cover_bound.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\tile_id.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshaders.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_tex_uc.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_uc.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\util\geom.hpp">
+      <Filter>inc\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\md\util\geom_inl.hpp">
+      <Filter>inc\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\cpp_misc.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\interpolate.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\string.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\unitbezier.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_line.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_symbol.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\styletypes.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_background.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\marker\marker.hpp">
+      <Filter>src\md\mapengine\marker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_background.h">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpainters.h">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\gltexmgr.h">
+      <Filter>src\md\drawengine\rscmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\stb_easy_font.h">
+      <Filter>src\md\drawengine\rscmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\stb_image.h">
+      <Filter>src\md\drawengine\rscmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\drawcontext.h">
+      <Filter>src\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_face.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_building.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\file_io.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\lru_cache.h">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\style\stylelayer_raster.hpp">
+      <Filter>src\md\mapengine\style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_bg.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\tile\raster_tile_source.hpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile_source.hpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\tile\tile_db_worker.h">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\tile\response.hpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile_layout.hpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile.hpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_overlay.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\msg_que_worker.h">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_face.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_line.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_obj_def.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_debug.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_debug.h">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_face.h">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_line.h">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpainters_obj_def.hpp">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\md_global.h">
+      <Filter>src\md</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_alpha_tex_uc.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\stops_def.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\rscmgr\dash_array.h">
+      <Filter>src\md\drawengine\rscmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\logtool.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\gps_scene\gps_view.h">
+      <Filter>src\md\gps_scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\tilecover_rasterize.h">
+      <Filter>src\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\util\merc_prj.hpp">
+      <Filter>src\md\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\view_camera.h">
+      <Filter>src\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\viewcam_Constraint.h">
+      <Filter>src\md\drawengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\tile\vec_tile_mvt.hpp">
+      <Filter>src\md\mapengine\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glshaders\glshd_thinline.h">
+      <Filter>src\md\drawengine\glshaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\mapengine\scenelayer\scenelayer_building.hpp">
+      <Filter>src\md\mapengine\scenelayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\md\drawengine\glpainters\glpaint_building.h">
+      <Filter>src\md\drawengine\painters</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

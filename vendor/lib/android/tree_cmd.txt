@@ -1,0 +1,35 @@
+C:\_mymaps\vendor\lib\android>tree  /F  >tree_cmd.txt
+
+卷 Windows 的文件夹 PATH 列表
+卷序列号为 C479-910A
+C:.
+│  tree_cmd.txt
+│  
+├─arm64-v8a
+│      libfreetype.a
+│      libmbedTLS.a
+│      libpng.a
+│      libsqlite3.a
+│      libzlib.a
+│      
+├─armeabi-v7a
+│      libfreetype.a
+│      libmbedTLS.a
+│      libpng.a
+│      libsqlite3.a
+│      libzlib.a
+│      
+├─x86
+│      libfreetype.a
+│      libmbedTLS.a
+│      libpng.a
+│      libsqlite3.a
+│      libzlib.a
+│      
+└─x86_64
+        libfreetype.a
+        libmbedTLS.a
+        libpng.a
+        libsqlite3.a
+        libzlib.a
+        

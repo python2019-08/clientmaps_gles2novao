@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="icon.png">./img/logo-icon-blue-square.png</file>
+    <file alias="default_marker.svg">../../../resroot/md/assets/img/default_marker.svg</file>
+    <file>source1.geojson</file>
+    <file>../../../resroot/md/assets/img/label-arrow.jpeg</file> 
+  </qresource>
+</RCC>

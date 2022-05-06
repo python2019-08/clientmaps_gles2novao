@@ -1,0 +1,35 @@
+C:\_abel\_stu\map\_mymaps\vendor\lib\iOS>tree  /F  >tree_cmd.txt
+
+卷 Windows 的文件夹 PATH 列表
+卷序列号为 C479-910A
+C:.
+│  tree_cmd.txt
+│  
+├─Debug-iphoneos
+│      libfreetype.a
+│      libjuce.a
+│      libmbedTLS.a
+│      libpng.a
+│      libsqlite3.a
+│      
+├─Debug-iphonesimulator
+│      libfreetype.a
+│      libjuce.a
+│      libmbedTLS.a
+│      libpng.a
+│      libsqlite3.a
+│      
+├─Release-iphoneos
+│      libfreetype.a
+│      libjuce.a
+│      libmbedTLS.a
+│      libpng.a
+│      libsqlite3.a
+│      
+└─Release-iphonesimulator
+        libfreetype.a
+        libjuce.a
+        libmbedTLS.a
+        libpng.a
+        libsqlite3.a
+        

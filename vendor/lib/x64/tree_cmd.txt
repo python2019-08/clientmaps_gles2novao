@@ -1,0 +1,51 @@
+C:\_abel\_stu\map\_mymaps\vendor\lib\x64>tree  /F  >tree_cmd.txt
+
+卷 Windows 的文件夹 PATH 列表
+卷序列号为 C479-910A
+C:.
+│  glew32.dll
+│  glew32.lib
+│  glew32s.lib
+│  glewinfo.exe
+│  tree_cmd.txt
+│  visualinfo.exe
+│  
+├─Debug
+│      freetype250.lib
+│      libpng.bsc
+│      libpng.lib
+│      mbedTLS.lib
+│      mbedTLS.pdb
+│      sqlite3.lib
+│      sqlite3.pdb
+│      zlib.bsc
+│      zlib.lib
+│      
+├─Debug_MD
+│      freetype250.lib
+│      libpng.bsc
+│      libpng.lib
+│      mbedTLS.lib
+│      sqlite3.lib
+│      sqlite3.pdb
+│      zlib.bsc
+│      zlib.lib
+│      
+├─Release
+│      freetype250.lib
+│      libpng.bsc
+│      libpng.lib
+│      mbedTLS.lib
+│      sqlite3.lib
+│      zlib.bsc
+│      zlib.lib
+│      
+└─Release_MD
+        freetype250.lib
+        libpng.bsc
+        libpng.lib
+        mbedTLS.lib
+        sqlite3.lib
+        zlib.bsc
+        zlib.lib
+        
